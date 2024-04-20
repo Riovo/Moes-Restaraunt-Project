@@ -984,7 +984,6 @@ section{
    color:var(--white);
    font-size: 2rem;
    text-transform: capitalize;
-   /* padding-bottom: 10rem; */
 }
 
 .credit span{
@@ -995,7 +994,7 @@ section{
    position: fixed;
    top:0; left:0; right:0; bottom: 0;
    z-index: 1000000;
-   background-color: var(--white);
+   background-color: #FCFCFF;
    display: flex;
    align-items: center;
    justify-content: center;
