@@ -47,7 +47,7 @@ include 'components/add_cart.php';
             <div class="content">
                <span>order online</span>
                <h3>delicious pizza</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               <a href="menu.php" class="btn">see menus</a>
             </div>
             <div class="image">
                <img src="images/home-img-1.png" alt="">
@@ -58,7 +58,7 @@ include 'components/add_cart.php';
             <div class="content">
                <span>order online</span>
                <h3>Extra Cheesy Hamburger</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               <a href="menu.php" class="btn">see menus</a>
             </div>
             <div class="image">
                <img src="images/home-img-2.png" alt="">
@@ -69,7 +69,7 @@ include 'components/add_cart.php';
             <div class="content">
                <span>order online</span>
                <h3>roasted chicken</h3>
-               <a href="menu.html" class="btn">see menus</a>
+               <a href="menu.php" class="btn">see menus</a>
             </div>
             <div class="image">
                <img src="images/home-img-3.png" alt="">

@@ -13,13 +13,13 @@ if(isset($_SESSION['user_id'])){
 
 if(isset($_POST['submit'])){
 
-   $address = $_POST['House Number'] .', '.$_POST['Address Line 1'].', '.$_POST['Address Line 2'].', '.$_POST['City'] .', '. $_POST['Town'] .', '. $_POST['County'] .', '. $_POST['Country'] .', '. $_POST['pin_code']. ' - '. $_POST['Eircode'];
+   $address = $_POST['HouseNum'].' '.$_POST['AddressLine1'].', '.$_POST['AddressLine2'].', '.$_POST['City'] .', '. $_POST['Town'] .', '. $_POST['County']. ' - '. $_POST['Eircode'];
    $address = filter_var($address, FILTER_SANITIZE_STRING);
 
    $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
    $update_address->execute([$address, $user_id]);
 
-   $message[] = 'address saved!';
+   $message[] = 'Your address has been saved!';
 
 }
 
@@ -48,14 +48,12 @@ if(isset($_POST['submit'])){
 
    <form action="" method="post">
       <h3>Enter Your Address</h3>
-      <input type="text" class="box" placeholder="House Number" required maxlength="50" name="House Number">
-      <input type="text" class="box" placeholder="Address Line 1" required maxlength="50" name="Address Line 1">
-      <input type="text" class="box" placeholder="Address Line 2 (optional)" maxlength="50" name="Address Line 2">
+      <input type="text" class="box" placeholder="House Number" required maxlength="50" name="HouseNum">
+      <input type="text" class="box" placeholder="Address Line 1" required maxlength="50" name="AddressLine1">
+      <input type="text" class="box" placeholder="Address Line 2 (optional)" maxlength="50" name="AddressLine2">
       <input type="text" class="box" placeholder="City" required maxlength="50" name="City">
       <input type="text" class="box" placeholder="Town" required maxlength="50" name="Town">
-      <input type="text" class="box" placeholder="County (if applicable)" required maxlength="50" name="County">
-      <input type="text" class="box" placeholder="Country" required maxlength="50" name="Country">
-      <input type="number" class="box" placeholder="pin code (if applicable)" required max="999999" min="0" maxlength="6" name="pin_code">
+      <input type="text" class="box" placeholder="County (if applicable)" maxlength="50" name="County">
       <input type="text" class="box" placeholder="Eircode" required maxlength= "8" name="Eircode">
       <input type="submit" value="save address" name="submit" class="btn">
    </form>
