@@ -13,7 +13,7 @@ if(isset($_SESSION['user_id'])){
 
 if(isset($_POST['submit'])){
 
-   $address = $_POST['flat'] .', '.$_POST['building'].', '.$_POST['area'].', '.$_POST['town'] .', '. $_POST['city'] .', '. $_POST['state'] .', '. $_POST['country'] .' - '. $_POST['pin_code'];
+   $address = $_POST['House Number'] .', '.$_POST['Address Line 1'].', '.$_POST['Address Line 2'].', '.$_POST['City'] .', '. $_POST['Town'] .', '. $_POST['County'] .', '. $_POST['Country'] .', '. $_POST['pin_code']. ' - '. $_POST['Eircode'];
    $address = filter_var($address, FILTER_SANITIZE_STRING);
 
    $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
@@ -47,25 +47,20 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>your address</h3>
-      <input type="text" class="box" placeholder="flat no." required maxlength="50" name="flat">
-      <input type="text" class="box" placeholder="building no." required maxlength="50" name="building">
-      <input type="text" class="box" placeholder="area name" required maxlength="50" name="area">
-      <input type="text" class="box" placeholder="town name" required maxlength="50" name="town">
-      <input type="text" class="box" placeholder="city name" required maxlength="50" name="city">
-      <input type="text" class="box" placeholder="state name" required maxlength="50" name="state">
-      <input type="text" class="box" placeholder="country name" required maxlength="50" name="country">
-      <input type="number" class="box" placeholder="pin code" required max="999999" min="0" maxlength="6" name="pin_code">
+      <h3>Enter Your Address</h3>
+      <input type="text" class="box" placeholder="House Number" required maxlength="50" name="House Number">
+      <input type="text" class="box" placeholder="Address Line 1" required maxlength="50" name="Address Line 1">
+      <input type="text" class="box" placeholder="Address Line 2 (optional)" maxlength="50" name="Address Line 2">
+      <input type="text" class="box" placeholder="City" required maxlength="50" name="City">
+      <input type="text" class="box" placeholder="Town" required maxlength="50" name="Town">
+      <input type="text" class="box" placeholder="County (if applicable)" required maxlength="50" name="County">
+      <input type="text" class="box" placeholder="Country" required maxlength="50" name="Country">
+      <input type="number" class="box" placeholder="pin code (if applicable)" required max="999999" min="0" maxlength="6" name="pin_code">
+      <input type="text" class="box" placeholder="Eircode" required maxlength= "8" name="Eircode">
       <input type="submit" value="save address" name="submit" class="btn">
    </form>
 
 </section>
-
-
-
-
-
-
 
 
 
