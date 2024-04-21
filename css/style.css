@@ -926,18 +926,6 @@ section{
    color:var(--white);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer .grid{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -1079,4 +1067,9 @@ section{
       gap:0;
    }   
 
+}
+
+.welcome-user {
+   font-size: 2.5rem;
+   text-align: center;
 }
