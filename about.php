@@ -41,7 +41,6 @@ if(isset($_SESSION['user_id'])){
 </div>
 
 <!-- about section starts  -->
-
 <section class="about">
 
    <div class="row">

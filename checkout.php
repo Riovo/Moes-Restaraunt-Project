@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
          }
       ?>
       <p class="grand-total"><span class="name">grand total :</span><span class="price">$<?= $grand_total; ?></span></p>
-      <a href="cart.php" class="btn">veiw cart</a>
+      <a href="cart.php" class="btn">view cart</a>
    </div>
 
    <input type="hidden" name="total_products" value="<?= $total_products; ?>">
@@ -126,15 +126,16 @@ if(isset($_POST['submit'])){
       <a href="update_address.php" class="btn">update address</a>
       <select name="method" class="box" required>
          <option value="" disabled selected>select payment method --</option>
-         <option value="cash on delivery">cash on delivery</option>
+         <option value="cash on delivery">Cash on delivery</option>
          <option value="credit card">Credit / Debit card</option>
-         <option value="paypal">paypal</option>
+         <option value="paypal">Paypal</option>
       </select>
+      <!-- checks if address is empty, Dont allow for submit -->
       <input type="submit" value="place order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
    </div>
 
 </form>
-   
+
 </section>
 
 
