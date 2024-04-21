@@ -32,6 +32,7 @@ if(isset($_POST['send'])){
       $insert_message->execute([$user_id, $name, $email, $number, $msg]);
 
       $message[] = 'Message sent successfully!';
+      
 
    }
 
