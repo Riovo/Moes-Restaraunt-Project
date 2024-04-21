@@ -1,3 +1,6 @@
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 <footer class="footer">
 
    <section class="grid">
@@ -29,7 +32,7 @@
 
    </section>
 
-   <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span><a href="mailto:C22375093@mytudublin.ie">Mohammed Abourass, C22375093</a></span> | all rights reserved!</div>
+   <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span><a href="mailto:C22375093@mytudublin.ie">Mohammed Abourass, C22375093</a></span> | all rights reserved! Make Sure to Checkout my Github Profile! <a href="https://github.com/Riovo"><i class="fab fa-github"></i></a></div>
 
 </footer>
 
