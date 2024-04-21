@@ -114,12 +114,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Huebert Alex</h3>
+            <h3>Emmanuel - IzRosh</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-2.png" alt="">
-            <p>THey didnt lie about the food being hot when it arrived!.</p>
+            <p>They didnt lie about the food being hot when it arrived!.</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -127,7 +127,7 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Alexa</h3>
+            <h3>David - The Sikko</h3>
          </div>
 
          <div class="swiper-slide slide">

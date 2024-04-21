@@ -30,13 +30,12 @@ include 'components/add_cart.php';
 
 </head>
 <body>
-   
+<!-- user header stars -->
 <?php include 'components/user_header.php'; ?>
+<!-- user header ends -->
 
 <section class="products">
-
    <h1 class="title">food category</h1>
-
    <div class="box-container">
 
       <?php
