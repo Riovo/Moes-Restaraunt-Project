@@ -37,7 +37,9 @@ include 'components/add_cart.php';
 
 <?php include 'components/user_header.php'; ?>
 
-<p class="welcome-user"><b>Welcome, <?php echo $fetch_profile['name']; ?>!<b></p>
+<?php if (isset($_SESSION['user_id'])): ?>
+        <p class="welcome-user"><b>Welcome, <?php echo $fetch_profile['name']; ?>!</b></p>
+    <?php endif; ?>
 
 <section class="hero">
 
