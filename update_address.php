@@ -13,7 +13,7 @@ if(isset($_SESSION['user_id'])){
 
 if(isset($_POST['submit'])){
 
-   $address = $_POST['HouseNum'].' '.$_POST['AddressLine1'].', '.$_POST['AddressLine2'].', '.$_POST['City'] .', '. $_POST['Town'] .', '. $_POST['County']. ' - '. $_POST['Eircode'];
+   $address = sha1($_POST['HouseNum'].' '.$_POST['AddressLine1'].', '.$_POST['AddressLine2'].', '.$_POST['City'] .', '. $_POST['Town'] .', '. $_POST['County']. ' - '. $_POST['Eircode']);
    $address = filter_var($address, FILTER_SANITIZE_STRING);
 
    $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
