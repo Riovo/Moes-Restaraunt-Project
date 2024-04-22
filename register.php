@@ -92,10 +92,6 @@ if(isset($_POST['submit'])){
 
 
 
-
-
-
-
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
