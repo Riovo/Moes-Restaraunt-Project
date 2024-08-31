@@ -23,7 +23,7 @@ include 'components/add_cart.php';
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Moe's Restaraunt!</title>
 
-   <link rel="icon" href="/images/logo.ico">
+   <link rel="icon" href="/images/Logo.ico">
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
    <!-- font awesome cdn link  -->
@@ -159,16 +159,6 @@ include 'components/add_cart.php';
    </div>
 
 </section>
-
-
-
-
-
-
-
-
-
-
 
 
 
